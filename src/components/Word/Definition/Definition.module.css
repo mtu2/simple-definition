@@ -1,0 +1,35 @@
+/* Definition */
+.definition {
+  display: grid;
+  grid-template-columns: 40px 1fr auto;
+  width: 100%;
+  margin: 20px 0;
+}
+.number {
+  padding: 0px 16px 0px 0px;
+  font-size: 16px;
+  font-weight: 600;
+}
+.wordDefinition {
+  font-size: 20px;
+  font-weight: 500;
+}
+.partOfSpeech {
+  transform: translateY(-6px);
+  font-size: 16px;
+  font-weight: 600;
+  text-align: right;
+  color: #1e5e9f;
+}
+
+/* Example */
+.example {
+  grid-column-start: 2;
+  grid-column-end: span 2;
+  margin-top: 8px;
+  font-size: 18px;
+  font-weight: 300;
+}
+.example strong {
+  font-weight: 400;
+}
