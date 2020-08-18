@@ -6,7 +6,8 @@
 :root {
   --main-bg-color: #1cbf89;
   --dark-main-bg-color: rgba(20, 163, 116, 0.6);
-  --page-bg-color: #ffffff;
+  --main-text-color: #ffffff;
+  --secondary-text-color: #1e5e9f;
 }
 
 /* Document Settings */
@@ -17,7 +18,7 @@
 }
 html {
   font-family: "Lato", sans-serif;
-  color: white;
+  color: var(--main-text-color);
 }
 body {
   background-color: var(--main-bg-color);

@@ -19,7 +19,7 @@
   font-size: 16px;
   font-weight: 600;
   text-align: right;
-  color: #1e5e9f;
+  color: var(--secondary-text-color);
 }
 
 /* Example */
