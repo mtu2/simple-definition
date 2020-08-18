@@ -15,6 +15,7 @@
   font-weight: 500;
 }
 .partOfSpeech {
+  padding: 0px 0px 0px 16px;
   transform: translateY(-6px);
   font-size: 16px;
   font-weight: 600;

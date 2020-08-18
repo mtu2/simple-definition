@@ -9,6 +9,9 @@ const Definition = (props) => (
     <p className={styles.partOfSpeech}>
       <em>{props.partOfSpeech}</em>
     </p>
+    <p className={styles.example}>
+      <em>{props.example[0].toLowerCase() + props.example.substring(1)}</em>
+    </p>
   </div>
 );
 

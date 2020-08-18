@@ -1,10 +1,12 @@
 /* Word */
 .word {
-  height: 320px;
-  width: 560px;
+  height: auto;
+  min-height: 320px;
+  width: 600px;
+  min-width: 600px;
   background-color: var(--dark-main-bg-color);
   border-radius: 5px;
-  padding: 32px 64px;
+  padding: 32px 64px 48px 64px;
 }
 
 /* Title - word and pronunciation */
@@ -15,14 +17,38 @@
   width: 100%;
   margin-top: -84px;
 }
-.title h1 {
+h1 {
   font-size: 72px;
   font-weight: 700;
   font-family: "Inconsolata", monospace;
   text-decoration: bold;
 }
-.title h2 {
+h2 {
   padding-top: 16px;
   font-size: 24px;
   font-weight: 300;
+}
+
+/* Button */
+button {
+  padding: 6px 12px;
+  margin: 0px 0px 32px 0px;
+  border-radius: 5px;
+  font-size: 20px;
+  font-family: "Inconsolata", monospace;
+  float: right;
+  border: none;
+  background: none;
+  color: var(--secondary-text-color);
+  cursor: pointer;
+
+  /* Temporary */
+  transition: all 0.3s ease-in-out;
+}
+button:focus {
+  outline: none;
+}
+button:hover {
+  background: lightcoral;
+  color: white;
 }

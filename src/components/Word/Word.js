@@ -16,17 +16,26 @@ const Word = (props) => {
       <div className={styles.title}>
         <h1>{props.word}</h1>
         <h2>
-          <em>{pronunciation}</em>
+          <em>/{pronunciation}/</em>
         </h2>
       </div>
 
-      {props.wordObject.definitions.map((def, index) => (
-        <Definition
-          wordDef={def.definition}
-          number={index + 1}
-          partOfSpeech={def.partOfSpeech}
-        />
-      ))}
+      {props.wordObject.definitions
+        .filter((def) => def.hasOwnProperty("examples"))
+        .slice(0, 5)
+        .map((def, index) => (
+          <Definition
+            wordDef={def.definition}
+            number={index + 1}
+            partOfSpeech={def.partOfSpeech}
+            example={def.examples[0]}
+            key={index}
+          />
+        ))}
+
+      <button onClick={props.clicked}>
+        <em>generate</em>
+      </button>
     </div>
   );
 };
