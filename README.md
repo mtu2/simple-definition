@@ -1,3 +1,9 @@
+# Random Definitions web app w/ React 📕
+Simple web app that randomly generates definitions. Made with React Components & CSS Modules - hosted on Heroku.
+
+https://mtu-simpledefinition.herokuapp.com/
+
+## Create React App
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
