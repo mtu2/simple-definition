@@ -22,7 +22,8 @@ html {
 }
 body {
   background-color: var(--main-bg-color);
-  height: 100vh;
+  height: 100vh; /* Fallback for browsers that do not support Custom Properties */
+  height: calc(var(--vh, 1vh) * 100); /* 1vh when --vh not set */
   display: flex;
   flex-direction: column;
   justify-content: center;
