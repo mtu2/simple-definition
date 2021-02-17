@@ -16,6 +16,8 @@
   align-items: center;
   width: 100%;
   margin-top: -84px;
+
+  overflow: hidden;
 }
 h1 {
   font-size: 72px;

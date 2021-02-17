@@ -1,5 +1,4 @@
 import React from "react";
-
 import styles from "./Definition.module.css";
 
 const Definition = (props) => (

@@ -1,15 +1,13 @@
 import React from "react";
-
 import Definition from "./Definition/Definition";
 import styles from "./Word.module.css";
 
-const Word = (props) => {
+function Word(props) {
   // Unpack pronunciation
   let pronunciation = props.wordObject.pronunciation;
   if (typeof pronunciation === "object") {
     pronunciation = pronunciation[Object.keys(pronunciation)[0]];
   }
-  console.log(props.wordObject.definitions[0]);
 
   return (
     <div className={styles.word}>
@@ -38,6 +36,6 @@ const Word = (props) => {
       </button>
     </div>
   );
-};
+}
 
 export default Word;
