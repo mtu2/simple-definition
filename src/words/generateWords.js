@@ -19,7 +19,6 @@ const filteredData = arrayData
 
 const generateRandomWord = () => {
   const randomKey = Math.floor(Math.random() * filteredData.length);
-  console.log(filteredData[randomKey]);
   return filteredData[randomKey];
 };
 

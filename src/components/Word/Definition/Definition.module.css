@@ -1,12 +1,12 @@
 /* Definition */
 .definition {
   display: grid;
-  grid-template-columns: 40px 1fr auto;
+  grid-template-columns: 32px 1fr auto;
   width: 100%;
   margin: 20px 0;
 }
 .number {
-  padding: 0px 16px 0px 0px;
+  margin-right: 24px;
   font-size: 16px;
   font-weight: 600;
 }
@@ -15,7 +15,7 @@
   font-weight: 500;
 }
 .partOfSpeech {
-  padding: 0px 0px 0px 16px;
+  margin-left: 16px;
   transform: translateY(-6px);
   font-size: 16px;
   font-weight: 600;
@@ -33,4 +33,39 @@
 }
 .example strong {
   font-weight: 400;
+}
+
+@media screen and (max-width: 600px) {
+  .number {
+    margin-right: 8px;
+    font-size: 14px;
+  }
+  .wordDefinition {
+    font-size: 18px;
+  }
+  .partOfSpeech {
+    margin-left: 12px;
+    transform: translateY(-4px);
+    font-size: 14px;
+  }
+  .example {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .number {
+    margin-right: 0px;
+  }
+  .wordDefinition {
+    font-size: 16px;
+  }
+  .partOfSpeech {
+    margin-left: 0px 0px 0px 8px;
+    transform: translateY(-4px);
+    font-size: 14px;
+  }
+  .example {
+    font-size: 15px;
+  }
 }

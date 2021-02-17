@@ -2,8 +2,8 @@
 .word {
   height: auto;
   min-height: 320px;
-  width: 600px;
-  min-width: 600px;
+  width: 90vw;
+  max-width: 600px;
   background-color: var(--dark-main-bg-color);
   border-radius: 5px;
   padding: 32px 64px 48px 64px;
@@ -15,7 +15,7 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  margin-top: -84px;
+  margin-top: -18%;
 
   overflow: hidden;
 }
@@ -36,8 +36,10 @@ button {
   padding: 6px 12px;
   margin: 0px 0px 32px 0px;
   border-radius: 5px;
+
   font-size: 20px;
   font-family: "Inconsolata", monospace;
+
   float: right;
   border: none;
   background: none;
@@ -53,4 +55,16 @@ button:focus {
 button:hover {
   background: lightcoral;
   color: white;
+}
+
+@media screen and (max-width: 600px) {
+  .word {
+    padding: 32px 48px 48px 48px;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .word {
+    padding: 32px 16px 48px 16px;
+  }
 }
