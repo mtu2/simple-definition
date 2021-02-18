@@ -1,5 +1,6 @@
 /* Word */
 .word {
+  position: relative;
   height: auto;
   min-height: 320px;
   width: 90vw;
@@ -33,11 +34,15 @@ h2 {
 
 /* Button */
 button {
-  padding: 6px 12px;
-  margin: 0px 0px 32px 0px;
-  border-radius: 5px;
+  position: absolute;
+  bottom: 16px;
+  right: 64px;
 
-  font-size: 20px;
+  padding: 6px 12px;
+  margin-top: 16px;
+
+  font-size: 24px;
+  font-weight: 700;
   font-family: "Inconsolata", monospace;
 
   float: right;
@@ -46,25 +51,33 @@ button {
   color: var(--secondary-text-color);
   cursor: pointer;
 
-  /* Temporary */
-  transition: all 0.3s ease-in-out;
+  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.2em;
+  background-position: 0 88%;
+  transition: background-size 0.25s ease-in;
 }
 button:focus {
   outline: none;
 }
 button:hover {
-  background: lightcoral;
-  color: white;
+  background-size: 100% 88%;
 }
-
 @media screen and (max-width: 600px) {
   .word {
     padding: 32px 48px 48px 48px;
+  }
+  button {
+    right: 48px;
   }
 }
 
 @media screen and (max-width: 440px) {
   .word {
     padding: 32px 16px 48px 16px;
+  }
+  button {
+    right: 16px;
+    font-size: 20px;
   }
 }
