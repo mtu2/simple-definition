@@ -22,10 +22,16 @@ html {
 }
 body {
   background-color: var(--main-bg-color);
-  height: 100vh; /* Fallback for browsers that do not support Custom Properties */
-  height: calc(var(--vh, 1vh) * 100); /* 1vh when --vh not set */
+  height: 100vh; /* For desktops or fallback for mobile browsers that do not support Custom Properties */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+@media only screen and (hover: none) and (pointer: coarse) {
+  /* For mobile devices */
+  body {
+    height: calc(var(--vh, 1vh) * 100); /* 1vh when --vh not set */
+  }
 }
