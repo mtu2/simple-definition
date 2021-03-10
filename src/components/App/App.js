@@ -9,7 +9,6 @@ function App() {
     // fix for 100vh on mobile devices
     let vh = window.innerHeight * 0.01;
     document.documentElement.style.setProperty("--vh", `${vh}px`);
-    console.log(vh);
   }, []);
 
   function newWordHandler() {

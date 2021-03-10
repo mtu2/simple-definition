@@ -48,7 +48,6 @@ function Word(props) {
     const proWidth = proRef.current.offsetWidth;
 
     if (titleWidth < wordWidth + proWidth + 24) {
-      console.log(fontSize);
       setFontSize((obj) => ({
         word: obj.word - 1,
         pro: Math.max(obj.pro - 1, 14),
